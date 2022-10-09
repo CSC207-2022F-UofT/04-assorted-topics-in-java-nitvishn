@@ -11,3 +11,15 @@
  */
 
 import java.util.List;
+
+public class DrivableTrader<T extends Drivable> extends Trader<T>{
+
+    public DrivableTrader(List<T> inventory, List<T> wishlist,
+                          int money){
+        super(inventory, wishlist, money);
+    }
+
+    public DrivableTrader(int money) {
+        super(money);
+    }
+}
